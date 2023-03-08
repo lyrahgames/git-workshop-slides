@@ -1,0 +1,15 @@
+*
+!*/
+
+!utilities
+
+!*.tex
+!references.bib
+!*.pdf
+
+!makefile
+
+!images/**
+!resources/**
+
+!.git*
