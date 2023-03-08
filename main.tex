@@ -71,7 +71,7 @@
 \setbeamertemplate{navigation symbols}{}
 
 \title{%
-  Git Workshop%
+  Workshop Version Control: \\ Getting Started with Git%
 }
 % \subtitle{Master's Thesis Defense and Presentation}
 \author{Markus Pawellek}
@@ -82,14 +82,13 @@
 
 \selectlanguage{english}
 
-\frame[plain]{\titlepage}
-
-\begin{frame}[plain]{}
-  \centering
-  \includegraphics[height=0.85\textheight]{images/bad-version-control-1.jpg}
-
-  {\scriptsize Image from \fullcite{bad-version-control}.}
+\begin{frame}[plain]
+  \includegraphics[width=0.2\linewidth]{images/logo.png}
+  \hfill
+  \includegraphics[width=0.7\linewidth]{images/banner.png}
 \end{frame}
+
+\frame[plain]{\titlepage}
 
 \begin{frame}[plain]{Outline}
   \footnotesize
@@ -101,21 +100,147 @@
 \section{Motivation} % (fold)
 \label{sec:motivation}
 
+  \begin{frame}[plain]{}
+    \centering
+    \includegraphics[height=0.85\textheight]{images/bad-version-control-1.jpg}
+
+    {\scriptsize Image from \fullcite{bad-version-control}.}
+  \end{frame}
+
 % section motivation (end)
 
 \section{Literature and Resources} % (fold)
 \label{sec:literature_and_resources}
 
   \begin{frame}{Literature and Resources}
-
+    \begin{itemize}
+      \item \fullcite{git-homepage}
+      \item \fullcite{git-reference}
+      \item \fullcite{pro-git}
+      \item \fullcite{github-docs}
+      \item \fullcite{github-git-cheatsheet}
+    \end{itemize}
   \end{frame}
 
 % section literature_and_resources (end)
 
+\section{Basics} % (fold)
+\label{sec:basics}
+
+  % \begin{frame}{Basics}
+  %   \includegraphics[width=0.2\linewidth]{images/logo.png}
+  %   \hfill
+  %   \includegraphics[width=0.7\linewidth]{images/banner.png}
+  % \end{frame}
+
+  \begin{frame}{Basics: Distributed Version Control}
+    \centering
+    \only<1>{\includegraphics[height=0.8\textheight]{images/centralized.png}}
+    \only<2>{\includegraphics[height=0.8\textheight]{images/distributed.png}}
+
+    {\scriptsize Image from \textcite{pro-git}.}
+  \end{frame}
+
+  \begin{frame}{Basics: Snapshots}
+    \centering
+    \only<1>{\includegraphics[width=0.8\linewidth]{images/deltas.png}}
+    \only<2>{\includegraphics[width=0.8\linewidth]{images/snapshots.png}}
+
+    {\scriptsize Image from \textcite{pro-git}.}
+  \end{frame}
+
+  \begin{frame}{Basics: The Three States}
+    \centering
+    \includegraphics[height=0.8\textheight]{images/areas.png}
+
+    {\scriptsize Image from \textcite{pro-git}.}
+  \end{frame}
+
+  \begin{frame}{Basics: Recording Changes}
+    \centering
+    \includegraphics[width=\linewidth]{images/lifecycle.png}
+
+    {\scriptsize Image from \textcite{pro-git}.}
+  \end{frame}
+
+  \begin{frame}{Basics: Commits}
+    \centering
+    \includegraphics[width=\linewidth]{images/commits-and-parents.png}
+
+    {\scriptsize Image from \textcite{pro-git}.}
+  \end{frame}
+
+  \begin{frame}{Basics: Commit Tree}
+    \centering
+    \includegraphics[height=0.8\textheight]{images/commit-and-tree.png}
+
+    {\scriptsize Image from \textcite{pro-git}.}
+  \end{frame}
+
+% section basics (end)
+
+\section{Git by Example} % (fold)
+\label{sec:git_by_example}
+
+  \begin{frame}{Git by Example}
+    \begin{enumerate}
+      \item Initial Setup
+      \item Initializing Repositories
+      % \item Commiting Files
+      \item gitignore
+    \end{enumerate}
+  \end{frame}
+
+% section git_by_example (end)
+
 \section{Rules of Thumb} % (fold)
 \label{sec:rules_of_thumb}
 
+  \begin{frame}{Rules of Thumb: Commit Messages}
+    \centering
+    \includegraphics[height=0.8\textheight]{images/bad-commit-messages.png}
+
+    {\scriptsize Image from \textcite{good-commit-message}.}
+  \end{frame}
+
+  \begin{frame}{Rules of Thumb: Commit Messages}
+    The seven rules of a great Git commit message
+    \begin{enumerate}
+      \item Separate subject from body with a blank line
+      \item Limit the subject line to 50 characters
+      \item Capitalize the subject line
+      \item Do not end the subject line with a period
+      \item Use the imperative mood in the subject line
+      \item Wrap the body at 72 characters
+      \item Use the body to explain what and why vs. how
+    \end{enumerate}
+  \end{frame}
+
+  \begin{frame}{Rules of Thumb}
+    \begin{enumerate}
+      \item Use gitignore whitelisting
+    \end{enumerate}
+  \end{frame}
+
 % section rules_of_thumb (end)
+
+\section{Outlook} % (fold)
+\label{sec:outlook}
+
+  \begin{frame}{Outlook}
+    \begin{itemize}
+      \item Submodules
+      \item Hooks
+      \item Merge and Rebase
+      \item Cherrypick
+      \item Stashing
+      \item Signing your Work
+      \item Searching
+      \item Attributes
+    \end{itemize}
+  \end{frame}
+
+% section outlook (end)
 
 \setcounter{backupcounter}{\value{framenumber}}
 
